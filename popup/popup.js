@@ -1,4 +1,5 @@
 const timeElement = document.querySelector("#time");
+const colorPicker = document.querySelector("#color");
 const militarySelector = document.querySelector("#milTime");
 let militaryTime = false;
 
@@ -11,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
 militarySelector.addEventListener("click", function (e) {
     militaryTime = !militaryTime;
     console.log(militaryTime);
+});
+
+// Handle color picker
+colorPicker.addEventListener("change", function () {
+    timeElement.style.color = colorPicker.value;
 });
 
 function getTime() {
