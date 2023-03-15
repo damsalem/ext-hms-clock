@@ -17,3 +17,6 @@ function updateTime() {
     const time = getTime();
     timeElement.innerHTML = time;
 }
+
+// TODO: Build color picker markup and fn
+// TODO: Set default color in localState
