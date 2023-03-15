@@ -19,4 +19,4 @@ Try out the latest, unpublished version here.
 
 # Coding
 
-Initially, I thought I'd need to use AlpineJS or some other framework to set the time, but I realized, just a bit of VanillaJS would likely take care of the whole thing.
+This was a good opportunity to figure out how to store state for extensions. ChatGPT pointed me in the direction of the chrome.storage API.
