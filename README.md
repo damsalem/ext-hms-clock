@@ -4,7 +4,7 @@
 
 A Chrome Extension to display a clock with hours, minutes, and seconds.
 
-I created this Extension because I used to trade Options and I needed to know exactly when the market would open to the second, but having another tab open wasn't good and I used my phone to trade.
+I created this Extension because I used to trade stock options and I needed to know exactly when the market would open to the second, but having another tab open wasn't good and I used my phone to trade.
 
 Having a Chrome Extension that displayed the full time digitally would have been perfect.
 
