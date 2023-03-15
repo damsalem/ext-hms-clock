@@ -1,6 +1,6 @@
 .container {
     margin: 1rem;
-    min-width: 12rem;
+    min-width: 13rem;
 }
 
 h1 {
@@ -10,4 +10,5 @@ h1 {
 
 #time {
     font-size: 3rem;
+    text-align: center;
 }
