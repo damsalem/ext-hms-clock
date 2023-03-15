@@ -9,9 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Handle military time toggle
-militarySelector.addEventListener("click", function (e) {
+militarySelector.addEventListener("click", function () {
     militaryTime = !militaryTime;
-    console.log(militaryTime);
 });
 
 // Handle color picker
