@@ -4,18 +4,32 @@ const militarySelector = document.querySelector("#milTime");
 let militaryTime = false;
 
 // Run when extension is clicked
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
+    // Get state from storage
+    const { milTime } = await chrome.storage.sync.get(["milTime"]);
+    const { color } = await chrome.storage.sync.get(["color"]);
+
+    // Set markup to state
+    militarySelector.checked = milTime;
+    militaryTime = milTime;
+    colorPicker.value = color;
+    timeElement.style.color = color;
+
+    // Run time function
     setInterval(updateTime, 1);
 });
 
 // Handle military time toggle
 militarySelector.addEventListener("click", function () {
     militaryTime = !militaryTime;
+    chrome.storage.sync.set({ milTime: militaryTime });
 });
 
 // Handle color picker
 colorPicker.addEventListener("change", function () {
-    timeElement.style.color = colorPicker.value;
+    const color = colorPicker.value;
+    timeElement.style.color = color;
+    chrome.storage.sync.set({ color: color });
 });
 
 function getTime() {
@@ -43,7 +57,3 @@ function updateTime() {
     const time = getTime();
     timeElement.innerHTML = time;
 }
-
-// TODO: Set time toggler in localState
-// TODO: Build color picker markup and fn
-// TODO: Set default color in localState

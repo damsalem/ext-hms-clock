@@ -20,3 +20,5 @@ Try out the latest, unpublished version here.
 # Coding
 
 This was a good opportunity to figure out how to store state for extensions. ChatGPT pointed me in the direction of the chrome.storage API.
+
+Ideally, users would be able to use this extension across browsers, and by setting the color/time preference in the synced chrome storage, they wouldn't have to reset it every time they logged into a new browser.
