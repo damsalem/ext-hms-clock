@@ -4,11 +4,13 @@
 
 A Chrome Extension to display a clock with hours, minutes, and seconds.
 
+Install the published version on the [Chrome Web Store](https://chrome.google.com/webstore/detail/hms-clock/mbjkpklcjihpfbldfapoecehlibmfffk)
+
 I created this Extension because I used to trade stock options and I needed to know exactly when the market would open to the second, but having another tab open wasn't good and I used my phone to trade.
 
 Having a Chrome Extension that displayed the full time digitally would have been perfect.
 
-Try out the latest, unpublished version here.
+Get the latest, unpublished version here.
 
 1. Download the ZIP
 2. In Chrome, navigate to the extensions page
