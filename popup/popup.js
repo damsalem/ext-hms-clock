@@ -7,7 +7,7 @@ let militaryTime = false;
 document.addEventListener("DOMContentLoaded", async function () {
     // Get state from storage
     const { milTime } = await chrome.storage.sync.get(["milTime"]);
-    const { color } = await chrome.storage.sync.get(["color"]);
+    const { color = "#000000" } = await chrome.storage.sync.get(["color"]);
 
     // Set markup to state
     militarySelector.checked = milTime;
