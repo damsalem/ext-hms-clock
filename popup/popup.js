@@ -50,7 +50,7 @@ function getTime() {
         meridiem = "pm";
         hours -= 12;
     }
-    return `${hours}:${minutes}:${seconds} ${meridiem}`;
+    return `${hours}:${minutes}:${seconds} <br/>${meridiem}`;
 }
 
 function updateTime() {
